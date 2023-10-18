@@ -1,0 +1,348 @@
+:root {
+    font-size: 16px;
+  }
+  
+  body {
+    font-size: 1rem;
+  }
+  
+  .Navbar {
+    height: 4rem;
+    width: 100%;
+    padding: 0.5rem;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    justify-content: space-between;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 1rem 1.8rem rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    z-index: 1000;
+  }
+  
+  .Navbar::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: .5s;
+  } 
+  
+  .nav-logo {
+    display: flex;
+    justify-content: flex-start;
+    font-family: Montserrat, Times New Roman, Times, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50%;
+  }
+  
+  .nav-items > a {
+    color: black;
+    font-size: 1.5rem;
+    font-family: Montserrat, Times New Roman, Times, serif;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 0.9rem;
+    position: relative;
+    opacity: 0.9;
+  }
+  
+  .nav-items > a:hover {
+    opacity: 1;
+  }
+  
+  .nav-items > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.1rem;
+    background: rgb(232, 156, 15);
+    transition: all 0.45s;
+  }
+  
+  .nav-items > a:hover::before {
+    width: 100%;
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .Nav {
+    justify-content: right;
+    display: flex;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 1440px) {
+    :root {
+      font-size: 14px;
+    }
+  
+    .Navbar {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    :root {
+      font-size: 12px;
+    }
+  
+    .Navbar {
+      width: 100%;
+    }
+  
+    .nav-items > a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    :root {
+      font-size: 10px;
+    }
+
+    .nav-logo {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+    }
+  
+    .Navbar {
+      height: auto;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 2rem;
+      width: 100%;
+    }
+  
+    .nav-items > a {
+      font-size: 1.1rem;
+      margin: 0.8rem;
+    }
+  
+    .nav-logo {
+      margin-bottom: 0rem;
+    }
+  
+    .nav-toggle {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .nav-items {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+    }
+  
+    .nav-toggle.active + .nav-items {
+      display: flex;
+    }
+  }
+  
+  /* For Phones (425px) */
+  @media only screen and (max-width: 425px) {
+    :root {
+      font-size: 8px;
+    }
+  
+    .Navbar {
+      width: 100%;
+    }
+  
+    .nav-logo {
+      font-size: 2.2rem;
+    }
+  
+    .nav-items > a {
+      font-size: 1.2rem;
+      margin: 0.5rem;
+    }
+  
+    .nav-toggle {
+      width: 2rem;
+      height: 1.6rem;
+    }
+  
+    .nav-toggle > .bar {
+      width: 1.6rem;
+    }
+  
+    .nav-toggle > .bar::before,
+    .nav-toggle > .bar::after {
+      width: 1.6rem;
+      transform: translateY(0.6rem);
+    }
+  
+    .nav-toggle.open > .bar::before {
+      transform: rotate(45deg) translate(0.6rem, 0.6rem);
+    }
+  
+    .nav-toggle.open > .bar::after {
+      transform: rotate(-45deg) translate(0.6rem, -0.6rem);
+    }
+  }
+  
+  /* For Phones (375px) */
+  @media only screen and (max-width: 375px) {
+    :root {
+      font-size: 7px;
+    }
+  
+    .Navbar {
+      width: 100%;
+    }
+  
+    .nav-logo {
+      font-size: 1.1rem;
+    }
+  
+    .nav-items > a {
+      font-size: 2rem;
+      margin: 0.4rem;
+    }
+  
+    .nav-toggle {
+      width: 1.8rem;
+      height: 1.4rem;
+    }
+  
+    .nav-toggle > .bar {
+      width: 1.4rem;
+    }
+  
+    .nav-toggle > .bar::before,
+    .nav-toggle > .bar::after {
+      width: 1.4rem;
+      transform: translateY(0.5rem);
+    }
+  
+    .nav-toggle.open > .bar::before {
+      transform: rotate(45deg) translate(0.5rem, 0.5rem);
+    }
+  
+    .nav-toggle.open > .bar::after {
+      transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    :root {
+      font-size: 7px;
+    }
+    
+    .Navbar {
+      width: 100%;
+    }
+  
+    .nav-items > a {
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
+  
+    .nav-logo {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    :root {
+      font-size: 8px;
+    }
+  
+    .Navbar {
+      width: 100%;
+    }
+  
+    .nav-items {
+      position: absolute;
+      top: 9rem;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, .1);
+      box-shadow: 0 1rem 1.8rem rgba(0, 0, 0, .2);
+      border: 2px solid rgba(255, 255, 255, .5);
+      border-right: 2px solid rgba(255, 255, 255, .5);
+      border-bottom: 2px solid rgba(255, 255, 255, .5);
+      backdrop-filter: blur(0.2rem);
+      left: 0;
+      width: 100%;
+      height: 22rem;
+      transform: translateX(-100%);
+      transition: all 0.45s;
+    }
+  
+    .nav-items > a::before {
+      background: transparent;
+    }
+  
+    .nav-items.open {
+      transform: translateX(0);
+    }
+  
+    .nav-toggle {
+      display: flex;
+      width: 3rem;
+      height: 3.5rem;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+    .nav-toggle > .bar {
+      position: relative;
+      width: 2rem;
+      height: 0.2rem;
+      background: rgb(1, 5, 20);
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before,
+    .nav-toggle > .bar::after {
+      content: "";
+      position: absolute;
+      height: 0.2rem;
+      background: rgba(2, 129, 240, 0.886);
+      border-radius: 2px;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before {
+      width: 1.6rem;
+      transform: translateY(-0.8rem);
+      right: 0;
+    }
+  
+    .nav-toggle > .bar::after {
+      width: 2rem;
+      transform: translateY(0.8rem);
+    }
+  
+    .nav-toggle.open > .bar {
+      transform: translateX(-2rem);
+      background: transparent;
+    }
+  
+    .nav-toggle.open > .bar::before {
+      width: 2rem;
+      transform: rotate(45deg) translate(1.3rem, -1.3rem);
+    }
+  
+    .nav-toggle.open > .bar::after {
+      transform: rotate(-45deg) translate(1.3rem, 1.3rem);
+    }
+  }
+  
+ /* @media (min-width: 376px) and (max-width: 425px) {
+
+  .Navbar {
+    width: 111% !important;
+  }
+
+
+
+  } */

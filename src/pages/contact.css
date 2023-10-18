@@ -1,0 +1,430 @@
+.con {
+  text-align: start;
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+
+.conbox {
+  width: 85%;
+  margin-top: 1.5rem;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(225, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+}
+
+.text {
+  width: 90%;
+  font-size: 1.9rem;
+  font-family: Montserrat, Times New Roman, Times, serif;
+  text-align: justify;
+  color: rgb(194, 88, 35);
+}
+
+.text-icons {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.text-icon {
+  color: white;
+  font-size: 1.9rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.text-icon:hover {
+  color: #0bb8aa;
+}
+
+.you {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 2.5rem;
+}
+
+.namebox {
+  margin-top: 10%;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 70px 0 70px 0;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(225, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  padding: 10px;
+  width: 80%;
+  height: 20vh;
+}
+
+.pvt {
+  text-align: center;
+  font-size: 2rem;
+  color: #4a23d3;
+  font-family: Montserrat, Times New Roman, Times, serif;
+}
+
+.pvt:hover {
+  color: #7f0761;
+}
+
+.loc {
+  margin-top: 2.5rem;
+  width: 90vw;
+  height: 61vh;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.map {
+  margin: 15px 15px 0 15px;
+}
+
+.eqn {
+  margin-top: 2.5rem;
+  width: 50vw;
+  height: 117vh;
+  margin-left: 25%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+  border-radius: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.eqnbox {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer {
+  margin-top: 5%;
+  width: 100%;
+}
+
+/* Responsive Styles for laptop (1440px) */
+@media only screen and (max-width: 1440px) {
+  .con {
+    font-size: 3rem;
+  }
+  
+  .conbox {
+    width: 90%;
+  }
+  
+  .text {
+    width: 100%;
+    font-size: 2rem;
+  }
+    
+  .you {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+
+  .pvt {
+    padding: 3%;
+    font-size: 3rem; 
+  }
+  
+  .namebox {
+    margin-left: 5%;
+    width: 90%;
+    height: 30%;
+  }
+  
+  .loc {
+    margin-top: 50px;
+    width: 90vw;
+    height: 530px;
+    margin-left: 4%;
+  }
+  
+  .map {
+    margin: 15px 15px 0 15px; 
+  }
+  
+  .eqn {
+    width: 90%;
+    height: 95%;
+    margin-left: 9%;
+  }
+  
+  .eqnbox {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  }
+  
+  .footer {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+
+/* Responsive Styles for laptop (1024px) */
+@media only screen and (max-width: 1024px) {
+  .con {
+    font-size: 2.5rem;
+  }
+  
+  .conbox {
+    width: 90%;
+  }
+  
+  .text {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+    
+  .you {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    margin-left: 10%;
+  }
+
+  .pvt {
+    padding: 3%;
+    font-size: 2.5rem; 
+  }
+  
+  .namebox {
+    margin-left: 5%;
+    width: 90%;
+    height: 30%;
+  }
+  
+  .loc {
+    margin-top: 50px;
+    width: 92vw;
+    height: 145vh;
+    margin-left: 0%;
+  }
+  
+  .map {
+    margin: 15px 15px 0 15px; 
+  }
+  
+  .eqn {
+    width: 95%;
+    height: 95%;
+    margin-left: 3%;
+  }
+  
+  .footer {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+
+/* Responsive Styles for Tablets (768px) */
+@media only screen and (max-width: 768px) {
+  .con {
+    font-size: 2rem;
+  }
+  
+  .conbox {
+    width: 100%;
+    margin-left: -5%;
+  }
+  
+  .text {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+    
+  .you {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 1%;
+  }
+
+  .pvt {
+    font-size: 2rem; 
+  }
+  
+  .namebox {
+    width: 95%;
+    height: 40vh;
+    margin-left: 1%;
+  }
+  
+  .loc {
+    margin-top: 50px;
+    width: 90vw;
+    height: 160vh;
+    margin-left: 1%;
+  }
+
+  .map {
+    margin: 15px 15px 0 15px; 
+  }
+  
+  .eqn {
+    width: 95%;
+    height: 95%;
+    margin-left: 5%;
+  }
+  
+  .footer {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+
+/* Responsive Styles for Phones (425px) */
+@media only screen and (max-width: 425px) {
+  .con {
+    font-size: 2rem;
+  }
+
+  .conbox {
+    width: 95%;
+    margin-left: 1%;
+  }
+  
+  .namebox {
+    width: 95%;
+  }
+
+  .loc {
+    width: 100%;
+    height: 330px; 
+  }
+
+  .eqn {
+    width: 95vw;
+    height: 410px;
+    margin-left: 1%;
+  }
+
+  .you {
+    font-size: 1.9rem;
+    margin-top: 30px;
+  }
+
+  .footer{
+    margin-top: 10%;
+    width: 100%;
+  }
+}
+
+
+/* Responsive Styles for Phones (375px) */
+@media only screen and (max-width: 375px) {
+  .con {
+    font-size: 2rem;
+  }
+
+  .conbox {
+    width: 10%;
+    margin-left: 0;
+  }
+
+  .you {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .pvt {
+    height: 50px;
+    font-size: 2rem;
+  }
+  
+  .namebox {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .loc {
+    width: 100%;
+    height: 420px;
+  }
+
+  .eqn {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .footer{
+    margin-top: 10%;
+    width: 100%;
+  }
+}
+
+/* Responsive Styles for Phones (320px) */
+@media only screen and (max-width: 320px) {
+  .con {
+    font-size: 2.5rem;
+  }
+
+  .conbox {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .namebox {
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+
+  .pvt {
+    font-size: 3rem;
+  }
+
+  .loc {
+    width: 86vw;
+    height: 330px;
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+
+  .map {
+    margin: 15px 15px 0 15px; 
+  }
+
+  .text {
+    font-size: 2rem;
+  }
+
+  .eqn {
+    width: 92%;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    height: 98%;
+  }
+
+  .you {
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-left: 2%;
+  }
+  .footer{
+    margin-top: 10%;
+    width: 100%;
+  }
+}

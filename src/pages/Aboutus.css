@@ -1,0 +1,197 @@
+.log-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.log {
+  width: 20%;
+  margin-left: 5%; 
+}
+
+.why {
+  display: flex;
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 1%;
+  color: rgb(30, 124, 218);
+  font-family: Montserrat, Times New Roman, Times, serif;
+}
+
+.matterab {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 32px 57.6px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  text-align: justify;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 2rem;
+  font-family: Montserrat, Times New Roman, Times, serif;
+}
+
+.udli {
+  text-decoration: underline green; 
+  font-family: Montserrat, Times New Roman, Times, serif;
+  font-size: 2.2rem;
+}
+
+.protext {
+  font-size: 1.5rem;
+  text-align: justify;
+  margin-top: 2rem;
+  font-weight: lighter;
+  font-family: Montserrat, Times New Roman, Times, serif;
+}
+
+.eqnabu {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 32px 32px 57.6px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-left: 25%;
+  margin-right: 5%;
+  width: 50%;
+  padding: 2rem; 
+}
+
+.footus {
+  margin-top: 5%;
+  width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+  .log {
+    width: 20%;
+    margin-left: 1%; 
+  }
+
+  .matterab {
+    width: 97%;
+    font-size: 2rem;
+  }
+
+  .protext {
+    width: 100%; 
+    font-size: 2rem;
+  }
+
+  .eqnabu {
+    width: 97%;
+    margin-left: 2%;
+  }
+
+  .footus {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .log {
+    width: 20%;
+    margin-left: 2%; 
+  }
+
+  .matterab {
+    width: 90;
+    margin-bottom: 3%;
+  }
+
+  .eqnabu  {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .footus {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .log {
+    width: 20%;
+    margin-left: 5%; 
+  }
+
+  .matterab {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+
+  .eqnabu {
+    width: 95%;
+    margin-left: 3%;
+    margin-bottom: 5%; 
+  }
+
+  .footus {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 425px) {
+  .log {
+    width: 50%;
+    max-width: 140px;
+    margin-left: 5%;
+  }
+
+  .matterab {
+    width: 90%;
+    margin: 0 5%; 
+  }
+
+  .eqnabu{
+    width: 90%;
+    margin: 0 5%; 
+  }
+
+  .footus {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 375px) {
+  .log {
+    width: 50%;
+    margin-left: 5%; 
+  }
+
+  .matterab {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  .eqnabu {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .footus {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .log {
+    width: 50%;
+    max-width: 120px;
+    margin-left: 5%; 
+  }
+
+  .why {
+    margin-left: 2%; 
+  }
+
+  .eqnabu,
+  .matterab {
+    width: 92%;
+    margin: 0 4%; 
+    margin-top: 2%; 
+  }
+
+  .footus {
+    width: 100%; 
+  }
+}

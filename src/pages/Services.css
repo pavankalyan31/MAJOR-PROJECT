@@ -1,0 +1,240 @@
+body {
+  font-size: 1.6rem;
+  font-family: Montserrat, Times New Roman, Times, serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.textser1,
+.textser2,
+.textser3,
+.boxser1,
+.boxser2,
+.boxser3 {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  box-shadow: 0 25px 45px rgba(9, 0, 0, 0.2);
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(80px);
+  font-family: Montserrat, Times New Roman, Times, serif;
+  font-size: 1.5rem;
+  width: 80%; /* Adjust width according to your design */
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 5%;
+  margin-bottom: 1%;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1440px) {
+  h2.ct {
+    font-size: 2.4rem;
+    margin: 1.5rem 0;
+  }
+
+  .table {
+    font-size: 1.6rem;
+    width: 100%;
+  }
+
+  h1.h11 {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+  }
+
+  h2.h22 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  p.boxser1, p.boxser2, p.boxser3 {
+    font-size: 1.4rem;
+  }
+
+  .footser {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h2.ct {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+  }
+
+  .table {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  h1.h11 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  h2.h22 {
+    font-size: 1.8rem;
+    margin: 0.8rem 0;
+  }
+
+  p.boxser1,
+  p.boxser2,
+  p.boxser3 {
+    font-size: 1.3rem;
+    margin: 0.8rem 0;
+  }
+
+  .textser1,
+  .textser2,
+  .textser3,
+  .boxser1,
+  .boxser2,
+  .boxser3 {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  h2.ct {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .table {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .table th, .table td {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  h1.h11 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+
+  h2.h22 {
+    font-size: 1.6rem;
+    margin: 0.8rem 0;
+  }
+
+  p.boxser1, p.boxser2, p.boxser3 {
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+  }
+
+  .footser {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .table {
+    width: 100%;
+  }
+  .table th, .table td {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .textser1, .textser2, .textser3, .boxser1, .boxser2, .boxser3 {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    width: 90%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .footser {
+    width: 100%;
+  }
+}
+
+
+/* For Phones (375px) */
+@media only screen and (max-width: 375px) {
+  .table {
+    width: 100%;
+  }
+  .table th, .table td {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .textser1, .textser2, .textser3, .boxser1, .boxser2, .boxser3 {
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footser {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h2.ct {
+    font-size: 1.4rem;
+    margin: 0.3rem 0;
+  }
+
+  .table {
+    width: 100%;
+  }
+  .table th, .table td {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  h1.h11 {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+  }
+
+  h2.h22 {
+    font-size: 1rem;
+    margin: 0.2rem 0;
+  }
+
+  p.boxser1, p.boxser2, p.boxser3 {
+    font-size: 0.8rem;
+    margin: 0.2rem 0;
+    width: 40%;
+  }
+
+  .footser {
+    width: 100%;
+  }
+}

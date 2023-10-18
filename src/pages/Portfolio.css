@@ -1,0 +1,101 @@
+.portfoliocontainer {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgb(234, 65, 65);
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 2%;
+    width: 100%;
+    font-family: Montserrat, Times New Roman, Times, serif;
+    margin-bottom: 5%;
+  }
+  
+  .portfolio-content {
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .portfolio-text, .portfolio-text1{
+    color: black;
+  }
+  
+/* For widescreen (1440px) */
+  @media only screen and (max-width: 1440px) {
+    .portfoliocontainer {
+      font-size: 1.3rem;
+      width: 100%;
+      margin-bottom: 5%; 
+    }
+    .portfolio-text,.portfolio-text1 {
+      font-size: 2rem;
+    }
+    .foot {
+      width: 100%;
+    }
+  }
+  
+  /* For laptop (1024px) */
+  @media only screen and (max-width: 1024px) {
+    .portfoliocontainer {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+    .foot {
+      width: 100%;
+    }
+  }
+  
+  /* For Tablets (768px) */
+  @media only screen and (max-width: 768px) {
+    .portfoliocontainer {
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .foot {
+      width: 100%;
+    }
+  }
+  
+ /* For Phones (425px) */
+@media only screen and (max-width: 425px) {
+  .portfoliocontainer {
+    font-size: 0.9rem;
+    width: 100% !important;
+  }
+
+  .foot {
+    width: 100% !important;
+  }
+}
+
+/* For Phones (375px) */
+@media only screen and (max-width: 375px) {
+  .portfoliocontainer {
+    font-size: 0.8rem;
+    width: 100% !important;
+  }
+
+  .foot {
+    width: 100% !important;
+  }
+}
+
+  
+  /* For Phones (320px) */
+  @media only screen and (min-width: 0px) and (max-width: 320px) {
+    .portfoliocontainer {
+      font-size: 1rem;
+      width: 90%;
+      margin-right: 1%;
+    }
+
+    .foot {
+      width: 99.9%;
+    }
+  }
+  

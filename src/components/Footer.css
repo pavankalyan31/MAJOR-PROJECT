@@ -1,0 +1,154 @@
+.footercontainer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footercontainer::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo-image {
+  width: 5rem; 
+}
+
+.company-name {
+  font-size: 1.5rem;
+}
+
+.stylefoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.linkstyle {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(251, 251, 251);
+}
+
+.linkstyle:hover {
+  color: #e6af19;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-icon {
+  color: white;
+  font-size: 2.2rem;
+  margin: 0 15px;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #00a8ff;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .stylefoot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linkstyle {
+    margin: 5px 0;
+  }
+
+  .footer-icons {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  :root {
+    font-size: 8px;
+  }
+
+  .footer-text, .footer-links {
+    font-size: 1rem;
+  }
+
+  .footer-icons {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  :root {
+    font-size: 7px;
+  }
+
+  .footer-text, .footer-links {
+    font-size: 0.9rem;
+  }
+
+  .footer-icons {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  :root {
+    font-size: 6.4px;
+  }
+
+  .footer-container {
+    width: 100vw;
+    margin-left: 0;
+  }
+  
+  .stylefoot {
+    gap: 1%;
+  }
+
+  .footer-icons {
+   margin-bottom: 2%;
+  }
+  
+  .footer-text {
+    font-size: 1.5rem;
+  }
+}
